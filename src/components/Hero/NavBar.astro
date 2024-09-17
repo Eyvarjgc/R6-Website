@@ -1,0 +1,49 @@
+---
+import SocialMedia from "./SocialMedia.astro"
+---
+
+<section class="md:flex h-24  justify-around items-center hidden">
+  <ul class="flex gap-12 text-3xl">
+    <li><a href="#Agents">Agentes</a></li>
+    <li><a href="#News">Noticias</a></li>
+    <li><a href="#Seasons">Temporadas</a></li>
+    <li><a href="#Maps">Mapas</a></li>
+  </ul>
+
+  <ul class="flex text-base items-center gap-8">
+    <li>
+      <a 
+      class="leading-10 tracking-wide "
+      href="https://rainbow6.ubisoft.com/" 
+      target="_blank" 
+      rel="noopener noreferrer">Pagina oficial de Rainbow Six Siege</a>
+    </li>
+
+    <SocialMedia link="https://x.com/Rainbow6Game" image="/img/XLogo.png"/>
+    <SocialMedia link="https://www.reddit.com/r/rainbow6/" image="/img/RedditLogo.png"/>
+    <SocialMedia link="https://discord.com/invite/ubisoftofficial" image="/img/DiscordLogo.png"/>
+
+
+    
+  </ul>
+</section>
+
+<!-- MOB -->
+<section class="md:hidden flex bg-gray-900 justify-between px-4 items-center py-0 sm:py-4">
+  <div class="flex flex-row items-center gap-2">
+
+    <button class="h-12"><img class="h-6 sm:h-12 " src="/img/burguerMenu.svg" alt=""></button>
+    <img class="w-16 sm:w-48 transition-all" src="/img/r6sIsologo.svg" alt="">
+
+  </div>
+
+  <a 
+  class="leading-10 tracking-wide text-sm sm:text-xl"
+  href="https://rainbow6.ubisoft.com/" 
+  target="_blank" 
+  rel="noopener noreferrer">Pagina oficial de Rainbow Six Siege</a>
+
+
+
+
+</section>
