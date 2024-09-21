@@ -1,16 +1,17 @@
 ---
 import SocialMedia from "./SocialMedia.astro"
+const buttonBack = 'Regresar'
 ---
 
-<section class="md:flex h-24  justify-around items-center hidden">
-  <ul class="flex gap-12 text-3xl">
-    <li><a href="#Agents">Agentes</a></li>
+<section class=" navBar  md:flex h-24 relative justify-around items-center hidden ">
+  <ul class=" flex gap-12 text-3xl  w-fit " >
+    <li><a href="#Agents" >Agentes</a></li>
     <li><a href="#News">Noticias</a></li>
     <li><a href="#Seasons">Temporadas</a></li>
     <li><a href="#Maps">Mapas</a></li>
   </ul>
 
-  <ul class="flex text-base items-center gap-8">
+  <ul class="flex text-base items-center gap-8 ">
     <li>
       <a 
       class="leading-10 tracking-wide "
@@ -29,11 +30,11 @@ import SocialMedia from "./SocialMedia.astro"
 </section>
 
 <!-- MOB -->
-<section class="md:hidden flex bg-gray-900 justify-between px-4 items-center py-0 sm:py-4">
+<section class="z-10 md:hidden flex bg-gray-900 justify-between px-4 items-center py-4 sm:py-4 flex-wrap ">
   <div class="flex flex-row items-center gap-2">
 
-    <button class="h-12"><img class="h-6 sm:h-12 " src="/img/burguerMenu.svg" alt=""></button>
-    <img class="w-16 sm:w-48 transition-all" src="/img/r6sIsologo.svg" alt="">
+    <button class="h-16 openMenu"><img class="h-9 sm:h-12 " src="/img/burguerMenu.svg" alt=""></button>
+    <img class="w-32 sm:w-48 transition-all" src="/img/r6sIsologo.svg" alt="">
 
   </div>
 
@@ -47,3 +48,55 @@ import SocialMedia from "./SocialMedia.astro"
 
 
 </section>
+
+<!-- OPENED MENU -->
+<section class="z-20 md:hidden bg-black  
+ flex w-[100vw] h-[100vh] fixed displayMenu ">
+
+  <div class="w-[90%] mx-auto my-4 navBar">
+
+    <ul class=" flex text-4xl gap-4  flex-col ">
+
+      <button class="flex  h-fit w-fit justify-center gap-1 items-center backMenu">
+        <img class="w-7 h-7" src="/img/back.png" alt="">
+        <span class="text-4xl h-fit w-fit">{buttonBack} </span>
+    
+      </button>
+
+      <span class="flex-col relative flex gap-4 my-2 mobilBar transition-all">
+        <li><a href="#Agents" >Agentes</a></li>
+        <li><a href="#News">Noticias</a></li>
+        <li><a href="#Seasons">Temporadas</a></li>
+        <li><a href="#Maps">Mapas</a></li>
+
+      </span>
+
+
+    </ul>
+
+
+
+
+  </div>
+
+
+
+</section>
+
+<script>
+  const openMenu = document.querySelector('.openMenu')
+  const displayMenu = document.querySelector('.displayMenu')
+  const backMenu = document.querySelector('.backMenu')
+
+  
+
+  openMenu.addEventListener('click', () =>{ 
+    displayMenu.classList.add('showMenu')
+    
+  })
+  
+  backMenu.addEventListener('click', () => {
+    displayMenu.classList.remove('showMenu')
+  })
+  
+</script>
