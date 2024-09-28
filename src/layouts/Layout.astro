@@ -26,6 +26,9 @@ const { title } = Astro.props;
 
 
 <style is:global>
+	body{
+		background-image: url('/img/defaultBg.jpg');
+	}
 	@font-face {
 		font-family: Rainbow;
 		src: url('/font/Rainbow.ttf');
@@ -40,7 +43,7 @@ const { title } = Astro.props;
 		font-family: Rainbow;
 	}
 	.News{
-		background-image: url('/img/defaultBg.jpg');
+		
 		font-family: Rainbow;
 		width: 100%;
 		height: max-content;
@@ -50,7 +53,36 @@ const { title } = Astro.props;
 		text-align: center;
 		color: white;
 	}
-
+	.Maps{
+		font-family: Rainbow;
+		width: 100%;
+		height: max-content;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		text-align: center;
+		color: white;
+	}
+	.LayerMaps{
+		background-image: url('/img/bg1.png');
+		position: absolute;
+		width: 100vw;
+		left: 0;
+		bottom: 0;
+			background-repeat: no-repeat;
+	}
+	.seasons{
+		background-image: url('/img/bg2.jpg');
+		font-family: Rainbow;
+		width: 100%;
+		height: max-content;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		text-align: center;
+		color: white;
+	}
+	
 	/* NAVBAR */
 	.navBar ul li a{
 		position: relative;
