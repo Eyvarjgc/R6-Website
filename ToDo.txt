@@ -1,1 +1,1 @@
-Realizar responsive hero
+[] Realizar filtrado de noticias 
