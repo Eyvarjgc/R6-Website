@@ -1,86 +1,127 @@
 ---
 
 
+
 ---
+<link rel="stylesheet" href="../../public/styles/season.css">
 
+ <section class="flex gap-4 justify-center items-center my-12 content ">
 
+   
+   
 
-<article class="relative z-10 inset-0 ">
-  <span class="layerSeason inset-0 absolute"></span>
-  <div class=" absolute z-20 flex flex-col justify-center items-center ">
-    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/w1LjEFP95SBNzBkGkbL6b/67e44dcda51a2b2d8471ff8e163dc875/r6s-newblood-logo-title-V2.png" class="z-50 w-[40%] mx-auto my-0" alt="">
-    <p class="text-3xl my-4 z-50">Ano 9 Temporada 2</p>
-  </div>
- 
-</article>
+</section>
 
+<h1 > </h1>
 
-
-<style>
-  article{
-    background: url('/img/OpNB.svg');
-    /* background-color: black; */
-    width: 20em;
-    height: 35em;
-    background-size: contain;
-    filter: brightness(0.4); 
-    background-position: center;
-    background-repeat: repeat;
-    transition: all 0.3s ease;
- 
-
+<script>
+  import data from '../data/seasons.json'
   
+
+  let count = 0
+  const content = document.querySelector('.content')
+
+  function serveData(data){
+
+
+    const htmlData = data.map((item) => {
+
+    return `<article class="relative z-10 inset-0 itemArticle  "
+    style="background-image: url(${item.background});>
+    <span class="layerSeason inset-0 absolute"></span>
+    <div class=" absolute z-20 flex flex-col justify-center items-center centerContent hover:brightness-200">
+      <img src=${item.centerImage} class="z-50 w-[40%] mx-auto my-0" alt="">
+      <p class="text-3xl my-4 z-50">${item.date}</p>
+    </div>
+    </article> `
+    }).join(' ')
+
+    content.innerHTML = htmlData 
+
+
+    content.children[1].classList.add('mainOp')
+    content.children[1].classList.remove('itemArticle')
+    
+    content.children[0].classList.add('before')
+    content.children[0].style.backgroundImage = 'none'
+    
+    content.children[2].classList.add('after')
+    content.children[2].style.backgroundImage = 'none'
+
+
+
   }
-  div{
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 40%;
+
+  function updateSlide(data){
+    const start = count
+    const end = count + 3
+
+    const itemToShow = data.slice(start, end)
+    
+    serveData(itemToShow)
+
+    const after = document.querySelector('.after')
+    const before = document.querySelector('.before')
+
+    if (count <= 0) {
+    before.setAttribute('disabled', 'true');
+  } else {
+    before.removeAttribute('disabled');
   }
-  article:hover{
-      filter: brightness(1);
-      
+
+  if (end >= data.length) {
+    after.setAttribute('disabled', 'true');
+  } else {
+    after.removeAttribute('disabled');
+  }
+
+
+    addEventListeners(data)
+  }
+
+  function addEventListeners(data){
+    const after = document.querySelector('.after')
+  const before = document.querySelector('.before')
+
+  after.removeEventListener('click', increaseValue)
+  before.removeEventListener('click', decreaseValue)
+  
+  function increaseValue(){
+    if(count + 3 < data.length ){
+      count++;
+      updateSlide(data)
     }
-  article:hover .layerSeason{
-    background: rgba(255, 166, 0, 0.361);
-    width: 100%;
-    height: 100%;
+
+
   }
 
-
-
-article::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100% ;
-  background-color: orange;
-  width: 2px;
-  visibility: hidden;
-  transform: translateX(-10px);
-  transition: all 0.3s ease;
+  function decreaseValue(){
+    if(count  > 0){
+      count--;
+      updateSlide(data)
+    }
   
-}
-article::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 100% ;
-  background-color: orange;
-  width: 2px;
-  visibility: hidden;
-  transform: translateX(10px);
-  transition: all 0.3s ease;
-}
 
-article:hover:before{
-  visibility: visible;
-}
-article:hover::after{
-  visibility: visible;
-}
-</style>
+  }
+
+  after.addEventListener('click', increaseValue)
+  before.addEventListener('click', decreaseValue)
+
+  }
+
+  updateSlide(data)
+
+
+
+ 
+
+
+
+
+
+  
+  
+</script>
+
+
+

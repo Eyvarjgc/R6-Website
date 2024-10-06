@@ -1,0 +1,51 @@
+[
+  {
+    "background":"https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4diqpk2NiXyCToKItEGLiZ/eae9bb50ecc8cb0d003090eb93cdf921/r6s_y9s3_season_list_keyart.jpg" ,
+    "date":"Ano 9 Temporada 3",
+    "centerImage": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4JeI9r6SnFMkauTzgHFEJc/a6a8ee6cdb032a9f8c24451be96684d4/r6s-twinshells-logo-title.png",
+    "operationName": "twin Shells"
+  }, 
+  {
+    "background":"https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2Tj39Hs8mR3ycSsHba16ZY/8af8ef95e18b7f621bb41fb3627f6805/r6s_y9s2_season_list_keyart.jpg" ,
+    "date":"Ano 9 Temporada 2",
+    "centerImage": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/w1LjEFP95SBNzBkGkbL6b/67e44dcda51a2b2d8471ff8e163dc875/r6s-newblood-logo-title-V2.png",
+    "operationName": "New blood"
+  }, 
+  {
+    "background": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/JH6jp9ShwXjV3f4nPf7tv/250b3667e199c008066fa306ee69bad2/Y9S1_OperatorKeyart_FINAL.jpg",
+    "date": "Ano 9 Temporada 1",
+    "centerImage": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4WhbytGVUEnUyf162U2o2F/b968e749e6a2a1a47ac1f9ced65b8214/r6s-deadlyomen-logo-title.png",
+    "operationName": "Deadly omen"
+
+  },
+
+  {
+    "background": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1ouwjLobSzyaGPT0FcoQqv/6bdd30036b9c1aa856dfd55d9b778b3d/Y8S4_OPERATOR_KEYART_540.jpg",
+    "date": "Ano 8 Temporada 4",
+    "centerImage": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4YornMfJ7n07f95C14T6gl/81cf14ab43b0143a5f1376615e2a373c/r6s-deepfreeze-logo-title.png",
+    "operationName": "Deep freeze"
+
+  },
+
+  {
+    "background":"https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7iAgVW713n4GV5TDqPGcaD/cc6ce586d1a789d77061ae58ec4e50b0/Y8S3_HeavyMettle_OperatorKeyart.jpg" ,
+    "date":"Ano 8 Temporada 3",
+    "centerImage": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6xOZEQuhYZoLMQHxj4Q4RA/aa1168972695e5fe85302c7aa502ac03/r6s-heavymettle-logo-title.png",
+    "operationName": "Heave Mettle"
+  }, 
+
+  {
+    "background": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4lkN2v7mOSsyHfr1vDdVM7/5897ccfef922765024780678426862af/R6S_Live_Y8S2_DreadFactor.jpg",
+    "date": "Ano 8 Temporada 2",
+    "centerImage":"https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/yeyKSvwKakdCvyHXYYOQZ/f66a727c263adcd8fde6a4bbb44b32ef/r6s-dreadfactor-logo-title.png" ,
+    "operationName": "DREAD FACTOR"
+
+  },
+  {
+    "background": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3NK3eIKNUG118nXBY0Zskj/a72dde4197c501308dbbe2b4b35932b0/Y8S1_CommandingForce_IMG_MainKeyArt.jpg",
+    "date": "Ano 8 Temporada 1",
+    "centerImage":"https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3RRiWFGfbJrtve0kUyuYXb/d68d244b8174593aa085b3ceeacc676f/r6s-commandingforce-logo-title.png" ,
+    "operationName": "COMMANDING FORCE"
+
+  }
+]

@@ -1,0 +1,40 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content"
+import Layout from "../../layouts/Layout.astro"
+
+export async function getStaticPaths(){
+  return [
+    {
+      params: {title: 'Y9S30%20PATCH%20NOTES%20ADDENDUM'},
+      props: {title: 'Y9S30 PATCH-NOTES ADDENDUM'}
+    }
+  ]
+  const news = await getCollection('News')
+
+  
+
+  // return news.map((book) => ({
+  //     params: {id: book.data.link},
+  //     props: { book }
+  // }))  
+  
+
+
+
+}
+
+const {title} = Astro.props
+console.log(title);
+
+  // const {book} = Astro.props
+  // const {data} = book
+  // const {img, title,date,description, otherNews,link, content} = data
+
+
+---
+
+
+<Layout title="">
+<h1>{title}</h1>
+</Layout>
