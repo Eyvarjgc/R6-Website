@@ -81,3 +81,50 @@
 .test{
   background-color: red;
 }
+
+@media (max-width: 850px){
+  .mainOp{
+    width: 15em;
+    height: 20em;
+
+  }
+
+  .itemArticle{
+    width: 10em;
+    height: 15em;
+
+  }
+}
+
+@media (max-width: 640px){
+  .mainOp{
+    width: 10em;
+    height: 15em;
+  }
+
+  .itemArticle{
+    width: 5em;
+    height: 10em;
+
+  }
+
+  .itemText{
+    font-size: 15px;
+  }
+}
+@media (max-width: 380px){
+  .mainOp{
+    width: 10em;
+    height: 15em;
+  }
+
+  .itemArticle{
+    width: 5em;
+    height: 10em;
+
+  }
+
+  .itemText{
+    font-size: 10px;
+  }
+}
