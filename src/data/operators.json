@@ -1,0 +1,85 @@
+
+[
+  {
+      "name": "ash",
+      "side": "Atacante",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/58Y4Q2x7msL8uQUoiA7LGM/b204acc9c5a015029140723ef2e435bb/Y0R6_BADGE_Ash_L.png",
+      "imageOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/58Y4Q2x7msL8uQUoiA7LGM/b204acc9c5a015029140723ef2e435bb/Y0R6_BADGE_Ash_L.png",
+      "health": 1,
+      "difficulty": 2,
+      "speed": 3
+    },
+    {
+      "name": "sledge",
+      "side": "Atacante",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4lgK1mOTVAoBhoj5qjYuyd/83c83d56e977f96ac0e9621c0d1c07d2/Y0R6_BADGE_Sledge_L.png",
+      "imageOperator": null,
+      "health": 2,
+      "difficulty": 1,
+      "speed": 2
+    },
+    {
+      "name": "thatcher",
+      "side": "Atacante",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5NbqTdEPmYy9qOZmN9StVT/f75b0f2610a37f9e5bdcb8ba9d551a38/Y0R6_BADGE_Thatcher_L.png",
+      "imageOperator": null,
+      "health": 2,
+      "difficulty": 2,
+      "speed": 2
+    },
+    {
+      "name": "jager",
+      "side": "Defensor",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1cCvTmKwnnovVmpZmDyPkA/b064f5ad6b9e7398d820d9ea90ff9366/Y0R6_BADGE_Jager_L.png",
+      "imageOperator": null,
+      "health": 2,
+      "difficulty": 2,
+      "speed": 2
+    },
+    {
+      "name": "rook",
+      "side": "Defensor",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Yk1noMd9re0RLlrXJSWtR/7a55e80593c487827293a114835dba63/Y0R6_BADGE_Rook_L.png",
+      "imageOperator": null,
+      "health": 3,
+      "difficulty": 1,
+      "speed": 1
+    },
+    {
+      "name": "doc",
+      "side": "Defensor",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/71Nl3v0LqHyo9eXV6xTFQd/1ba4f057b6acad3ec700ca9e60b53d6c/Y0R6_BADGE_Doc_L.png",
+      "imageOperator": null,
+      "health": 3,
+      "difficulty": 1,
+      "speed": 1
+    },
+    {
+      "name": "bandit",
+      "side": "Defensor",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4Vasjq82J1TNjNE38J7LmV/e1725f8d9ea2b85565e40b54faac85b8/Y0R6_BADGE_Bandit_L.png",
+      "imageOperator": null,
+      "health": 1,
+      "difficulty": 3,
+      "speed": 3
+    },
+    {
+      "name": "twitch",
+      "side": "Atacante",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3YgCpOSM2R4SDgExstxm7P/ff84e6ac53bd9f690deee78870f9c23b/Y0R6_BADGE_Twitch_L.png",
+      "imageOperator": null,
+      "health": 1,
+      "difficulty": 3,
+      "speed": 3
+    },
+    {
+      "name": "caveira",
+      "side": "Defensor",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4H1dOkcdZIKblKkAWjD390/10e57f4829eabda30f4aa1044e49893d/Y1S3_BADGE_Caveira_L.png",
+      "imageOperator": null,
+      "health": 1,
+      "difficulty": 3,
+      "speed": 3
+    }
+  ]
+

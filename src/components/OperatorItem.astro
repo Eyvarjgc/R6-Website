@@ -1,0 +1,119 @@
+---
+import OPERATORS from '../data/operators.json'
+
+
+
+const operatorsList = OPERATORS.map((Element) => {
+  return Element
+})
+
+
+
+console.log(operatorsList);
+
+
+
+---
+
+<article class="flex justify-center items-center px-32 gap-4 " style="view-transition-name: boxer;">
+
+  <section class=" w-1/2 grid grid-cols-3 gap-12 ">
+    {operatorsList.map((item) => (
+      <div class="bg-white w-44 h-32 flex justify-center items-center flex-col operator-item" data-name={item.name} data-side={item.side}>
+  
+        <img src={item.iconOperator} class="flex w-24 h-24 translate-x-5" >
+        <p class="text-2xl  -skew-x-12 -translate-x-full text-white font-medium">{item.name}</p>
+
+        
+      </div>
+  
+  
+  
+  
+  
+    ))}
+  
+  </section>
+
+  <aside class="w-1/2  flex justify-center items-center ">
+    <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30I7qa77OwH9EWPvcHYBbH/45c27a7d2d3df007b0138f2c6ab2b94a/r6s-operator-deimos.png" alt="" class=" imageOp " >
+  </aside>
+
+  
+</article>
+
+
+<section class="w-1/2 mx-32 my-0 text-4xl mt-12">
+  <h1 class="text-left operator-name">DEIMOS</h1>
+  <span class="w-full inline-block bg-white h-[1px]"></span>
+
+  <span class="flex justify-between">
+    <p class="sideOp">BANDO: ATACANTE</p>
+    <p>SALUD</p>
+    <p>SALUD</p>
+    <p>SALUD</p>
+
+  </span>
+
+</section>
+
+<script >
+
+  const operatorItem = document.querySelectorAll('.operator-item')
+  const imageOp = document.querySelector('.imageOp') as HTMLImageElement
+  const nameOp = document.querySelector('.operator-name')
+  const sideOp = document.querySelector('.sideOp')
+
+  const updateUI = ({name, side}) => {
+    
+    imageOp.src = `/img/operators/R6-operator-${name}.png`
+    nameOp.innerHTML = name
+    sideOp.innerHTML = `Bando: ${side}`
+
+  }
+  
+  
+operatorItem.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    const {name, side} = event.currentTarget?.dataset
+
+    if(!document.startViewTransition){
+      updateUI({name,side})
+      return
+    }
+
+    document.startViewTransition(() => {
+      updateUI({name,side})
+    })
+})
+})
+  
+
+
+</script>
+
+<style>
+  div{
+  
+	background:
+		linear-gradient(135deg, transparent 20px,transparent 30px, transparent 30px,hsla(0, 0%, 100%, .15) 0) top left,
+		linear-gradient(225deg, transparent 10px 0, hsla(0, 0%, 100%, .15) 0) top right,
+		linear-gradient(315deg, transparent 30px, transparent 40px  0, hsla(0, 0%, 100%, .15) 0) bottom right,
+		linear-gradient(45deg,  transparent 10px 0, hsla(0, 0%, 100%, .15) 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+  border-radius: 5px;
+  
+  }
+
+  .imageOp{
+    -webkit-mask-image: linear-gradient( #   35%, transparent);
+		mask-image: linear-gradient(#000 35%, transparent);
+
+  }
+
+</style>
+
+
+
+
