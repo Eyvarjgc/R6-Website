@@ -1,9 +1,9 @@
 [
   {
-"background":null,
+"background":"",
 "date": "Ano 9 Temporada 4",
-"centerImage":null ,
-"operationName": null 
+"centerImage":"" ,
+"operationName": ""
   },
   {
     "background":"https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4diqpk2NiXyCToKItEGLiZ/eae9bb50ecc8cb0d003090eb93cdf921/r6s_y9s3_season_list_keyart.jpg" ,
@@ -62,11 +62,11 @@
 
   },
   {
-    "background": null,
-    "date": null,
-    "centerImage":null ,
-    "operationName": null,
-    "link": null
+    "background": "",
+    "date": "",
+    "centerImage":"" ,
+    "operationName": "",
+    "link": ""
 
   }
 ]
