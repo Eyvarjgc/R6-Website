@@ -1,12 +1,11 @@
 ---
 interface Props {
-  img: string,
   title: string,
   date: string,
   description:string,
   link:string
 }
-const {img, title,date,description,link} = Astro.props
+const { title,date,description,link} = Astro.props
 
 
 
@@ -18,7 +17,7 @@ const {img, title,date,description,link} = Astro.props
 <div class="lg:flex lg:items-center lg:justify-center MainNew">
 
 
-    <img src={img} alt="" class="border-yellow-300 border rounded-sm relative lg:w-[40%] lg:h-[300px] lg:skew-y-[10deg] lg:my-8">
+    <img src=`/img/news/${title}.webp` alt="" class="border-yellow-300 border rounded-sm relative   lg:w-[40%] lg:h-[300px] lg:skew-y-[10deg] lg:my-8">
 
   <div class="lg:text-start lg:pl-12 lg:w-[40%]" >
 
@@ -27,8 +26,7 @@ const {img, title,date,description,link} = Astro.props
       text-cyan-400">{title}</h1> 
       <p class="bg-black text-2xl  tracking-wide   flex mx-auto my-0 " style="border-bottom-right-radius: 35px;">{date}</p>
       <p class="text-xl tracking-tight font-mono my-2">{description}</p>
-    <a href={`/News/${title}`} class="bg-cyan-800  px-4 py-1 text-black text-2xl info relative">Mas info</a>
-    
+    <a href={link} class="bg-cyan-800  px-4 py-1 text-black text-2xl info relative" target="_blank">Mas info</a>
  
   </div>
 

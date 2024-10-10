@@ -15,14 +15,13 @@ console.log(operatorsList);
 
 ---
 
-<article class="flex justify-center items-center px-32 gap-4 " style="view-transition-name: boxer;">
+<article class="flex flex-col lg:flex-row justify-center items-center lg:px-32 gap-4 " style="view-transition-name: boxer;">
 
-  <section class=" w-1/2 grid grid-cols-3 gap-12 ">
+  <section class=" lg:w-1/2 grid grid-cols-4 lg:grid-cols-4 gap-4 order-2 lg:order-1">
     {operatorsList.map((item) => (
-      <div class="bg-white w-44 h-32 flex justify-center items-center flex-col operator-item" data-name={item.name} data-side={item.side}>
+      <div class="w-10 h-10  lg:w-28 lg:h-28 flex justify-center items-center flex-col operator-item hover:scale-125 transition-all rounded-sm" data-name={item.name} data-side={item.side}>
   
-        <img src={item.iconOperator} class="flex w-24 h-24 translate-x-5" >
-        <p class="text-2xl  -skew-x-12 -translate-x-full text-white font-medium">{item.name}</p>
+        <img src={item.iconOperator} class="flex w-16 h-16 z-50 hover:scale-110 transition-all" >
 
         
       </div>
@@ -35,7 +34,7 @@ console.log(operatorsList);
   
   </section>
 
-  <aside class="w-1/2  flex justify-center items-center ">
+  <aside class="lg:w-1/2 w-[100%]  flex justify-center items-center order-1 ">
     <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30I7qa77OwH9EWPvcHYBbH/45c27a7d2d3df007b0138f2c6ab2b94a/r6s-operator-deimos.png" alt="" class=" imageOp " >
   </aside>
 
@@ -43,15 +42,13 @@ console.log(operatorsList);
 </article>
 
 
-<section class="w-1/2 mx-32 my-0 text-4xl mt-12">
-  <h1 class="text-left operator-name">DEIMOS</h1>
+<section class="w-1/2 lg:mx-32 mx-auto  my-0 text-4xl mt-12  ">
+  <h1 class="lg:text-left operator-name">DEIMOS</h1>
   <span class="w-full inline-block bg-white h-[1px]"></span>
 
   <span class="flex justify-between">
     <p class="sideOp">BANDO: ATACANTE</p>
-    <p>SALUD</p>
-    <p>SALUD</p>
-    <p>SALUD</p>
+
 
   </span>
 
@@ -64,12 +61,14 @@ console.log(operatorsList);
   const nameOp = document.querySelector('.operator-name')
   const sideOp = document.querySelector('.sideOp')
 
+
+
+  
   const updateUI = ({name, side}) => {
     
     imageOp.src = `/img/operators/R6-operator-${name}.png`
     nameOp.innerHTML = name
     sideOp.innerHTML = `Bando: ${side}`
-
   }
   
   
@@ -93,6 +92,8 @@ operatorItem.forEach((item) => {
 </script>
 
 <style>
+ 
+
   div{
   
 	background:
@@ -103,17 +104,38 @@ operatorItem.forEach((item) => {
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
   border-radius: 5px;
+
+  } 
   
+  div::before{
+    background:
+		linear-gradient(135deg, transparent 20px,transparent 30px, transparent 30px,rgba(0, 255, 255, 0.409) 0) top left,
+		linear-gradient(225deg, transparent 10px 0, rgba(0, 255, 255, 0.409) 0) top right,
+		linear-gradient(315deg, transparent 30px, transparent 40px  0, rgba(0, 255, 255, 0.409) 0) bottom right,
+		linear-gradient(45deg,  transparent 10px 0, rgba(0, 255, 255, 0.409) 0) bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+  border-radius: 5px;
+    position: absolute;
+    content: '';
+    height: 0%;
+    width: 0%;
+    transition: all 0.2s ease;
   }
 
+  div:hover:before{
+    width: 100%;
+    height: 100%;
+  }
   .imageOp{
     -webkit-mask-image: linear-gradient( #   35%, transparent);
 		mask-image: linear-gradient(#000 35%, transparent);
 
+
+ 
   }
 
 </style>
-
 
 
 

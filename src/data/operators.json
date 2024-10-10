@@ -80,6 +80,36 @@
       "health": 1,
       "difficulty": 3,
       "speed": 3
-    }
+    } 
+
+    ,
+    {
+      "name": "valkyrie",
+      "side": "Defensor",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/44qXJmZmAwaD4w44JnPuOx/c54c8b9d3a6813ab8ce3e3f1dd4ef408/Y1S2_BADGE_Valkyrie_L.png",
+      "imageOperator": null,
+      "health": 1,
+      "difficulty": 3,
+      "speed": 3
+    } ,
+    {
+      "name": "vigil",
+      "side": "Defensor",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/56A3hXhWZdwO623g3ejeku/a40a0582a7841abfeed723d8fbe238d3/Y2S4_BADGE_Vigil_L.png",
+      "imageOperator": null,
+      "health": 1,
+      "difficulty": 3,
+      "speed": 3
+    } ,
+    {
+      "name": "deimos",
+      "side": "Atacante",
+      "iconOperator": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/18uYWtYnEjmMQBTTdkIfWF/ba8c07729ff3c6de5872ffbcdc7956fb/r6s-operators-badge-deimos.png",
+      "imageOperator": null,
+      "health": 1,
+      "difficulty": 3,
+      "speed": 3
+    } 
+    
   ]
 

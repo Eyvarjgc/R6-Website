@@ -85,13 +85,13 @@
 @media (max-width: 850px){
   .mainOp{
     width: 15em;
-    height: 20em;
+    height: 25em;
 
   }
 
   .itemArticle{
     width: 10em;
-    height: 15em;
+    height: 23em;
 
   }
 }
@@ -99,12 +99,12 @@
 @media (max-width: 640px){
   .mainOp{
     width: 10em;
-    height: 15em;
+    height: 20em;
   }
 
   .itemArticle{
     width: 5em;
-    height: 10em;
+    height: 15em;
 
   }
 
@@ -115,16 +115,16 @@
 @media (max-width: 380px){
   .mainOp{
     width: 10em;
-    height: 15em;
+    height: 20em;
   }
 
   .itemArticle{
     width: 5em;
-    height: 10em;
+    height: 15em;
 
   }
 
   .itemText{
-    font-size: 10px;
+    font-size: 10 px;
   }
 }

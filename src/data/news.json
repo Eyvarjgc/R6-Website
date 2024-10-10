@@ -1,28 +1,34 @@
 [
-  {"link": "Y9S30-PATCH-NOTES-ADDENDUM",
+  {
+    "link": "https://www.ubisoft.com/es-mx/game/rainbow-six/siege/news-updates/5ETMcAwe6xWaSvEBBMM3Jo/y9s3-patch-notes-addendum",
   "title": "Y9S3 PATCH NOTES ADDENDUM",
   "date": "20/9/2024",
-  "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/KOm0D3UuBjNDypujIlMee/,2db3229bbd51b2f2a076b588f432dea6/PATCHENOTES_ADDENDUM_Y9S3_960x540.jpg",
+
   "description": "See the changes made over the course of the Y9S3 Season Test Server."},
+
+
   {
-    "link": "Y9S3-STREAMER-CHARMS",
+    "link": "https://www.ubisoft.com/es-mx/game/rainbow-six/siege/news-updates/7LIsvUBfkr1eXTO2okx8dv/y9s3-streamer-charms",
     "title": "Y9S3 STREAMER CHARMS",
     "date": "6/9/2024",
-    "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ScFnUzBXFt3wmMSmwrGoN/67f188d1387cd2d662a3a4cf09f92082/-R6S-_Y9S3_Streamer_Charms_-_thumbnail.jpg",
-    "description": "New Rainbow Six Siege Streamer Charms for Y9S3!"
+
+    "description": "¡Nuevos charms de Rainbow Six Siege para Y9S3!"
   },
+
+
   {
-    "link": "SIEGE-INTELS-COMPETITIVE-PLAYLIST-UPDATE",
+    "link": "https://www.ubisoft.com/es-mx/game/rainbow-six/siege/news-updates/5S3SB7uqsvptz8G0Z2csOC/siege-intels-competitive-playlist-update",
     "title": "SIEGE INTELS COMPETITIVE PLAYLIST UPDATE",
     "date": "26/8/2024",
-    "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6wW1vyFWZHxnmYXiuOCY3m/7d664fd2f6e761935e8478585ff54c5e/Y9_SiegeIntels_Competitive_Playlist.jpg",
-    "description": "Check out the changes coming to the competitive playlist in the upcoming seasons!"
+    "description": "¡Mira los cambios que llegarán a la lista de reproducción competitiva en las próximas temporadas!"
   },
+
+
   {
-    "link": "SIEGE-INTELS-BATTLE-PASS",
-    "title": "SIEGE INTELS BATTLE PASS DE OPERATION TWIN SHELLS - DEL 10 DE SEPTIEMBRE AL 2 DE DICIEMBRE",
+    "link": "https://www.ubisoft.com/es-mx/game/rainbow-six/siege/news-updates/1P21T5Rllq7X72E0zSGpEG/y9s3-designers-notes",
+    "title": "Y9S3.2 Patch Notes",
     "date": "26/8/2024",
-    "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/52tFum7rktvK5JcYzmNLKD/a66875fca4e242cf9139ac027a4bf4d5/r6s_y9s3_twins-shells-battlepass_keyart.jpg",
-    "description": "Completa partidas multijugador para conseguir fichas del Battle Pass y desbloquear casillas. ¡Obtén el pase Premium o la membresía para conseguir aún más recompensas!"
+
+    "description": "cambios de balances que llegarán con la actualización Y9S3"
   }
 ]

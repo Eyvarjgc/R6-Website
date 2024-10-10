@@ -3,26 +3,27 @@ import SocialMedia from "./SocialMedia.astro"
 const buttonBack = 'Regresar'
 ---
 
-<section class=" navBar  md:flex h-24 relative justify-around items-center hidden ">
+<section class=" navBar  md:flex h-24 relative justify-around items-center hidden 
+">
   <ul class=" flex gap-12 text-3xl  w-fit " >
-    <li><a href="#Agents" >Agentes</a></li>
-    <li><a href="#News">Noticias</a></li>
-    <li><a href="#Seasons">Temporadas</a></li>
-    <li><a href="#Maps">Mapas</a></li>
+    <li><a href="#Agents" class="navItem">Agentes</a></li>
+    <li><a href="#News" class="navItem">Noticias</a></li>
+    <li><a href="#Seasons" class="navItem">Temporadas</a></li>
+    <li><a href="#Maps" class="navItem">Mapas</a></li>
   </ul>
 
   <ul class="flex text-base items-center gap-8 ">
     <li>
       <a 
-      class="leading-10 tracking-wide "
+      class="leading-10 tracking-wide navItem"
       href="https://rainbow6.ubisoft.com/" 
       target="_blank" 
       rel="noopener noreferrer">Pagina oficial de Rainbow Six Siege</a>
     </li>
 
-    <SocialMedia link="https://x.com/Rainbow6Game" image="/img/XLogo.png"/>
-    <SocialMedia link="https://www.reddit.com/r/rainbow6/" image="/img/RedditLogo.png"/>
-    <SocialMedia link="https://discord.com/invite/ubisoftofficial" image="/img/DiscordLogo.png"/>
+    <SocialMedia link="https://x.com/Rainbow6Game" image="/img/XLogo.webp"/>
+    <SocialMedia link="https://www.reddit.com/r/rainbow6/" image="/img/RedditLogo.webp"/>
+    <SocialMedia link="https://discord.com/invite/ubisoftofficial" image="/img/DiscordLogo.webp"/>
 
 
     
@@ -39,7 +40,7 @@ const buttonBack = 'Regresar'
   </div>
 
   <a 
-  class="leading-10 tracking-wide text-sm sm:text-xl"
+  class="leading-10 tracking-wide text-sm sm:text-xl navItem"
   href="https://rainbow6.ubisoft.com/" 
   target="_blank" 
   rel="noopener noreferrer">Pagina oficial de Rainbow Six Siege</a>
@@ -58,16 +59,16 @@ const buttonBack = 'Regresar'
     <ul class=" flex text-4xl gap-4  flex-col ">
 
       <button class="flex  h-fit w-fit justify-center gap-1 items-center backMenu">
-        <img class="w-7 h-7" src="/img/back.png" alt="">
+        <img class="w-7 h-7" src="/img/backArrow.png" alt="">
         <span class="text-4xl h-fit w-fit">{buttonBack} </span>
     
       </button>
 
       <span class="flex-col relative flex gap-4 my-2 mobilBar transition-all">
-        <li><a href="#Agents" >Agentes</a></li>
-        <li><a href="#News">Noticias</a></li>
-        <li><a href="#Seasons">Temporadas</a></li>
-        <li><a href="#Maps">Mapas</a></li>
+        <li><a href="#Agents" class="navItem">Agentes</a></li>
+        <li><a href="#News" class="navItem">Noticias</a></li>
+        <li><a href="#Seasons" class="navItem">Temporadas</a></li>
+        <li><a href="#Maps" class="navItem">Mapas</a></li>
 
       </span>
 
