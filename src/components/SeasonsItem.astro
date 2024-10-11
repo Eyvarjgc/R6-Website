@@ -3,12 +3,11 @@
 
 
 ---
-<link rel="stylesheet" href="../../public/styles/season.css">
+<link rel="stylesheet" href="/styles/season.css">
 
  <section class="flex gap-4 justify-center items-center my-12 content " >
 
-   
-   
+
 
 </section>
 
@@ -84,8 +83,6 @@
     const after = document.querySelector('.after')
   const before = document.querySelector('.before')
 
-  after.removeEventListener('click', increaseValue)
-  before.removeEventListener('click', decreaseValue)
   
   function increaseValue(){
     if(count + 3 < data.length ){
